@@ -20,13 +20,16 @@ One of the core features of this project is the utilization of pre-trained CNNs.
 
 # How it works
 
+<img src="assets\GamePlan.png" align="right" width="200px" style="padding-right: 430px;"/>
 
 - 1) Paths are defined for the input and output.
-	> A sample video is supplied, along with the option to build a dataset from the extracted video-frames.
+	- A sample video is supplied, along with the option to build a dataset from the extracted video-frames.
 
 - 2) Features are extracted from every image in the dataset.
 - 3) The collection of features is compared to every example image, and the results are ranked accordingly.
 - 4) The pairs with the highest scores are saved for analysis.
+
+<br clear="right"/>
 
 ## Example output
 
@@ -44,4 +47,23 @@ It can also be used to find similar images, even with differing resolutions.
 
 - Although the .ipynb file makes use of the VGG16 architecture, this method is compatible with several CNN's. Altering the architecture can improve the results on a specific dataset: a simple **PowerBI** dashboard showing the effects of changing the CNN on the sample data is also available.
 
+- This work serves as the basis for the paper *Evaluation Of Deep Learning Models In Search By Example Using Capsule Endoscopy Images*, presented at HCist 2023.
+
 ![Alt text](assets/figures/C.png)
+
+
+<!--
+@startuml GamePlan
+skinparam ConditionEndStyle hline
+start
+:Access dataset;
+repeat:Read images;
+  :Extract features to table;
+repeat while (more images?) is (yes)
+->no;
+:Extract features from querry image;
+:Calculate distance between features;
+:Display n best results;
+stop
+@enduml
+-->
