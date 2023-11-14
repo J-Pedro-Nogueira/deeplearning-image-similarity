@@ -9,13 +9,13 @@ This project presents an efficient solution for finding images similar to a give
 The entire project is implemented in Python, leveraging popular libraries such as TensorFlow and Keras for deep learning tasks. Python's versatility allows for easy integration with existing data analysis and machine learning workflows.
 
 ## Efficient Image Retrieval 
-This method utilizes the features extracted from the pre-trained CNN to efficiently find images within the dataset that are visually similar to the query image. This process rests on the efficient comparison of feature-vectors (by minimizing the distance between these data structures), and is optimized for speed and accuracy.
+This method utilizes the features extracted from the pre-trained CNN to efficiently find images within the dataset that are visually similar to the query image. This process rests on the efficient comparison of feature-vectors (by minimizing the distance between these data structures), and is optimized for speed.
 
 ## Pre-trained CNNs
-One of the core features of this project is the utilization of pre-trained CNNs. Instead of training a neural network from scratch — which can be computationally expensive and require a large dataset — the employed models have been pre-trained on massive datasets (ImageNet). This significantly reduces the computational requirements and enables the project to be deployed effectively even on small datasets.
+One of the core features of this project is the utilization of pre-trained CNNs. Instead of training a neural network from scratch — which can be computationally expensive and require a large dataset — the employed models have been pre-trained on massive datasets (ImageNet). This significantly reduces the computational requirements and enables the project to be deployed effectively on small datasets.
 
 ## Execution on Google Colaboratory
-**Google Colaboratory** provides a cloud-based Jupyter notebook environment with access to free GPU resources. This allows users to experiment with this project without the need for specialized hardware.
+**Google Colaboratory** provides access to free GPU resources, allowing users to experiment with this project without the need for specialized hardware.
 
 
 # How it works
@@ -43,11 +43,9 @@ It can also be used to find similar images, even with differing resolutions.
 
 ## Notes
 
-- The bulk of the time spent running this script relates to feature extraction. To save time on repeated tests, it's possible to save and load the extracted features to and from memory.
+- This work serves as the basis for the project __*Evaluation Of Deep Learning Models In Search By Example Using Capsule Endoscopy Images*__, presented at HCist 2023.
 
 - Although the .ipynb file makes use of the VGG16 architecture, this method is compatible with several CNN's. Altering the architecture can improve the results on a specific dataset: a simple **PowerBI** dashboard showing the effects of changing the CNN on the sample data is also available.
-
-- This work serves as the basis for the paper *Evaluation Of Deep Learning Models In Search By Example Using Capsule Endoscopy Images*, presented at HCist 2023.
 
 ![Alt text](assets/figures/C.png)
 
