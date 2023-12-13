@@ -45,6 +45,8 @@ It can also be used to find similar images, even with differing resolutions.
 
 - This work serves as the basis for the project __*Evaluation Of Deep Learning Models In Search By Example Using Capsule Endoscopy Images*__, presented at [HCist 2023](https://hcist.scika.org/).
 
+- To automatically validate the results through a crowd with MTurk, see [image-similarity-mturk-pipeline](https://github.com/J-Pedro-Nogueira/image-similarity-mturk-pipeline/).
+
 - Although the .ipynb file makes use of the VGG16 architecture, this method is compatible with several CNN's. Altering the architecture can improve the results on a specific dataset: a simple **PowerBI** dashboard showing the effects of changing the CNN on the sample data is also available.
 
 ![Alt text](assets/figures/C.png)
